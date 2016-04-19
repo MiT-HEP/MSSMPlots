@@ -1,0 +1,15 @@
+#emacs
+*~
+#vim
+.*swp
+#C/C++
+*.so
+*.d
+#python
+*.pyc
+#root dictionaries
+*pcm
+#Final results
+*pdf
+*png
+*root

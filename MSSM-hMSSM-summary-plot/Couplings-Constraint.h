@@ -1,0 +1,105 @@
+#include "TGraph.h"
+
+TGraph* Couplings_95_exp(){
+  TGraph* graph = new TGraph();
+  graph->SetPoint(0,304.7080794,60.);
+  graph->SetPoint(1,304.7079502,55.92875);
+  graph->SetPoint(2,304.6890643,54.48125);
+  graph->SetPoint(3,304.7076541,53.03375);
+  graph->SetPoint(4,304.7074891,51.58625);
+  graph->SetPoint(5,304.7073094,50.13875);
+  graph->SetPoint(6,304.7071121,48.69125);
+  graph->SetPoint(7,304.7068969,47.24375);
+  graph->SetPoint(8,304.7066647,45.79625);
+  graph->SetPoint(9,304.7064069,44.34875);
+  graph->SetPoint(10,304.7061195,42.90125);
+  graph->SetPoint(11,304.7058061,41.45375);
+  graph->SetPoint(12,304.7054633,40.00625);
+  graph->SetPoint(13,304.7050717,38.55875);
+  graph->SetPoint(14,304.7046355,37.11125);
+  graph->SetPoint(15,304.7041544,35.66375);
+  graph->SetPoint(16,304.7036137,34.21625);
+  graph->SetPoint(17,304.7029837,32.76875);
+  graph->SetPoint(18,304.7022766,31.32125);
+  graph->SetPoint(19,304.7014855,29.87375);
+  graph->SetPoint(20,304.7005515,28.42625);
+  graph->SetPoint(21,304.6994571,26.97875);
+  graph->SetPoint(22,304.6982046,25.53125);
+  graph->SetPoint(23,304.6967523,24.08375);
+  graph->SetPoint(24,304.6949629,22.63625);
+  graph->SetPoint(25,304.692827,21.18875);
+  graph->SetPoint(26,304.690314,19.74125);
+  graph->SetPoint(27,304.6872199,18.29375);
+  graph->SetPoint(28,304.6832077,16.84625);
+  graph->SetPoint(29,304.6782753,15.39875);
+  graph->SetPoint(30,304.6722719,13.95125);
+  graph->SetPoint(31,304.6640051,12.50375);
+  graph->SetPoint(32,304.6531925,11.05625);
+  graph->SetPoint(33,304.6400869,9.60875);
+  graph->SetPoint(34,304.6236875,8.16125);
+  graph->SetPoint(35,304.6108907,6.71375);
+  graph->SetPoint(36,304.6359786,5.26625);
+  graph->SetPoint(37,304.9314666,3.81875);
+  graph->SetPoint(38,307.762291,2.37125);
+  graph->SetPoint(39,309.375,2.280737359);
+  graph->SetPoint(40,318.125,1.744718803);
+  graph->SetPoint(41,326.875,1.147917948);
+  graph->SetPoint(42,330.389541,0.92375);
+  return graph;
+}
+
+TGraph* Couplings_95_obs(bool filled){
+  TGraph* graph = new TGraph();
+  graph->SetPoint(0,323.591897,60.);
+  graph->SetPoint(1,323.5905081,55.92875);
+  graph->SetPoint(2,323.5889883,54.48125);
+  graph->SetPoint(3,323.5873349,53.03375);
+  graph->SetPoint(4,323.5855572,51.58625);
+  graph->SetPoint(5,323.5836457,50.13875);
+  graph->SetPoint(6,323.5815076,48.69125);
+  graph->SetPoint(7,323.5791844,47.24375);
+  graph->SetPoint(8,323.576672,45.79625);
+  graph->SetPoint(9,323.5738978,44.34875);
+  graph->SetPoint(10,323.5707922,42.90125);
+  graph->SetPoint(11,323.5673896,41.45375);
+  graph->SetPoint(12,323.5636777,40.00625);
+  graph->SetPoint(13,323.5594296,38.55875);
+  graph->SetPoint(14,323.5546748,37.11125);
+  graph->SetPoint(15,323.5494109,35.66375);
+  graph->SetPoint(16,323.5435218,34.21625);
+  graph->SetPoint(17,323.5366154,32.76875);
+  graph->SetPoint(18,323.5288142,31.32125);
+  graph->SetPoint(19,323.5200518,29.87375);
+  graph->SetPoint(20,323.5097443,28.42625);
+  graph->SetPoint(21,323.4975358,26.97875);
+  graph->SetPoint(22,323.4834483,25.53125);
+  graph->SetPoint(23,323.4672988,24.08375);
+  graph->SetPoint(24,323.4467508,22.63625);
+  graph->SetPoint(25,323.4220984,21.18875);
+  graph->SetPoint(26,323.3927178,19.74125);
+  graph->SetPoint(27,323.3362343,18.29375);
+  graph->SetPoint(28,323.3076794,16.84625);
+  graph->SetPoint(29,323.2459544,15.39875);
+  graph->SetPoint(30,323.1684711,13.95125);
+  graph->SetPoint(31,323.0565237,12.50375);
+  graph->SetPoint(32,322.8750368,11.05625);
+  graph->SetPoint(33,322.6778797,9.60875);
+  graph->SetPoint(34,322.3329226,8.16125);
+  graph->SetPoint(35,321.7256222,6.71375);
+  graph->SetPoint(36,320.6534985,5.26625);
+  graph->SetPoint(37,318.5208711,3.81875);
+  graph->SetPoint(38,318.125,3.657238363);
+  graph->SetPoint(39,315.6211091,2.37125);
+  graph->SetPoint(40,318.125,2.223678529);
+  graph->SetPoint(41,326.875,1.778231634);
+  graph->SetPoint(42,335.625,1.398519089);
+  graph->SetPoint(43,344.375,1.060117587);
+  graph->SetPoint(44,347.8245509,0.92375);
+  if(filled){
+    graph->SetPoint(44,347.8245509,0.5);
+    graph->SetPoint(45, 90., 0.5);
+    graph->SetPoint(46, 90., 60.);
+    graph->SetPoint(47,323.591897,60.);
+  }
+  return graph;
+}
